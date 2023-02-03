@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <title>Personal Projects</title>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+        
+        <style>
+            .overlay
+            {
+                position: absolute;
+                width: 100%;
+                height: 225px;
+                background-color: rgba(0,0,0,0.65);
+                cursor: pointer;
+            }
+
+            .overlay-text
+            {
+                position: relative;
+                top: 50%;
+                left: 50%;
+                font-size: 30px;
+                text-align: center;
+                color: white;
+                transform: translate(-50%,-50%);
+            }
+        </style>
+        
+        <script>
+            function overlayToggle(toggleOn, element)
+            {
+                if (toggleOn)
+                {
+                    element.childNodes[1].style.visibility = "visible";
+                    element.style.backgroundColor = "rgba(0,0,0,0.65)";
+                }
+                else
+                {
+                    element.childNodes[1].style.visibility = "hidden";
+                    element.style.backgroundColor = "rgba(0,0,0,0)";
+                }
+            }
+        </script>
+        
+        <script src="/header/index.js" defer></script>
+    </head>
+    
+    <body>
+        <div id="header"></div>
+        
+        <main style="margin-top: 48px">
+            <section class="py-5 text-center container">
+                <div class="row py-lg-5">
+                    <div class="col-lg-6 col-md-8 mx-auto">
+                        <h1 class="fw-light">Personal Projects</h1>
+                        <p class="lead">A variety of projects that I have completed. Some stemmed from personal interest, while others started out as school projects, which I then put the necessary effort in to host here. These projects involve a wide variety of programming disiplines including web development, native Windows app developemnt, and C programming</p>
+                        <a href="https://github.com/BenFort" class="btn btn-primary my-2">View on GitHub</a>
+                    </div>
+                </div>
+            </section>
+
+            <div class="album py-5 bg-light">
+                <div class="container">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                            
+                                <svg class="bd-placeholder-img card-img-top"
+                                     width="100%" height="225"
+                                     xmlns="http://www.w3.org/2000/svg"
+                                     role="img"
+                                     preserveAspectRatio="xMidYMid slice"
+                                     focusable="false">
+                                        
+                                        <rect width="100%" height="100%" fill="#55595c"/>
+                                        <image href="/images/personal-projects/guelph-transit-map.png" width="100%" height="100%">
+                                        
+                                </svg>
+                                
+                                <a class="overlay text-decoration-none" href="/personal-projects/guelph-transit-map/app" onmouseleave="overlayToggle(true, this)" onmouseenter="overlayToggle(false, this)">
+                                    <div class="overlay-text">Guelph Transit Map</div>
+                                </a>
+
+                                <div class="card-body">
+                                    <p class="card-text">A Node.JS web application that uses real-time General Transit Feed Specification protocol buffer data to view the live location of Guelph Transit buses</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <a href="#" class="btn btn-sm btn-outline-secondary">About</a>
+                                            <a href="/personal-projects/guelph-transit-map/app" class="btn btn-sm btn-outline-secondary">Try it</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         
+                        <div class="col">
+                            <div class="card shadow-sm">
+                            
+                                <svg class="bd-placeholder-img card-img-top"
+                                     width="100%" height="225"
+                                     xmlns="http://www.w3.org/2000/svg"
+                                     role="img"
+                                     preserveAspectRatio="xMidYMid slice"
+                                     focusable="false">
+                                        
+                                        <rect width="100%" height="100%" fill="#55595c"/>
+                                        <image href="/images/personal-projects/cli-expression-trees.png" width="100%" height="100%">
+                                        
+                                </svg>
+                                
+                                <a class="overlay text-decoration-none" href="/ical-manager" onmouseleave="overlayToggle(true, this)" onmouseenter="overlayToggle(false, this)">
+                                    <div class="overlay-text">CLI Expression Trees</div>
+                                </a>
+
+                                <div class="card-body">
+                                    <p class="card-text">A web application featuring an emulated terminal running a CLI program that can be used to view and manipulate mathematical expression trees</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <a href="#" class="btn btn-sm btn-outline-secondary">About</a>
+                                            <a href="#" class="btn btn-sm btn-outline-secondary">Try it</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card shadow-sm">
+                            
+                                <svg class="bd-placeholder-img card-img-top"
+                                     width="100%" height="225"
+                                     xmlns="http://www.w3.org/2000/svg"
+                                     role="img"
+                                     preserveAspectRatio="xMidYMid slice"
+                                     focusable="false">
+                                        
+                                        <rect width="100%" height="100%" fill="#55595c"/>
+                                        <image href="/images/personal-projects/personal-website.png" width="100%" height="100%">
+                                        
+                                </svg>
+                                
+                                <a class="overlay text-decoration-none" href="/ical-manager" onmouseleave="overlayToggle(true, this)" onmouseenter="overlayToggle(false, this)">
+                                    <div class="overlay-text">Personal Website</div>
+                                </a>
+
+                                <div class="card-body">
+                                    <p class="card-text">The website you're currently on, built using NGINX on a Digital Ocean droplet, used to showcase projects I've completed, as well as co-op work term reports</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <a href="#" class="btn btn-sm btn-outline-secondary">About</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card shadow-sm">
+                            
+                                <svg class="bd-placeholder-img card-img-top"
+                                     width="100%" height="225"
+                                     xmlns="http://www.w3.org/2000/svg"
+                                     role="img"
+                                     preserveAspectRatio="xMidYMid slice"
+                                     focusable="false">
+                                        
+                                        <rect width="100%" height="100%" fill="#55595c"/>
+                                        <image href="/images/personal-projects/placeholder.jpg" width="100%" height="100%">
+                                        
+                                </svg>
+                                
+                                <a class="overlay text-decoration-none" href="/ical-manager" onmouseleave="overlayToggle(true, this)" onmouseenter="overlayToggle(false, this)">
+                                    <div class="overlay-text">iCal File Manager</div>
+                                </a>
+
+                                <div class="card-body">
+                                    <p class="card-text">A Node.JS web application using backend C code to manage creating and viewing iCal files, a common standardized file format for storing calendar events</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <a href="#" class="btn btn-sm btn-outline-secondary">About</a>
+                                            <a href="#" class="btn btn-sm btn-outline-secondary">Try it</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card shadow-sm">
+                            
+                                <svg class="bd-placeholder-img card-img-top"
+                                     width="100%" height="225"
+                                     xmlns="http://www.w3.org/2000/svg"
+                                     role="img"
+                                     preserveAspectRatio="xMidYMid slice"
+                                     focusable="false">
+                                        
+                                        <rect width="100%" height="100%" fill="#55595c"/>
+                                        <image href="/images/personal-projects/placeholder.jpg" width="100%" height="100%">
+                                        
+                                </svg>
+                                
+                                <a class="overlay text-decoration-none" href="/ical-manager" onmouseleave="overlayToggle(true, this)" onmouseenter="overlayToggle(false, this)">
+                                    <div class="overlay-text">RoboSim</div>
+                                </a>
+
+                                <div class="card-body">
+                                    <p class="card-text">A super small Unity project that I used to develop knowledge in game programming and using Blender for 3D modelling</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <a href="#" class="btn btn-sm btn-outline-secondary">About</a>
+                                            <a href="#" class="btn btn-sm btn-outline-secondary">Try it</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card shadow-sm">
+                            
+                                <svg class="bd-placeholder-img card-img-top"
+                                     width="100%" height="225"
+                                     xmlns="http://www.w3.org/2000/svg"
+                                     role="img"
+                                     preserveAspectRatio="xMidYMid slice"
+                                     focusable="false">
+                                        
+                                        <rect width="100%" height="100%" fill="#55595c"/>
+                                        <image href="/images/personal-projects/placeholder.jpg" width="100%" height="100%">
+                                        
+                                </svg>
+                                
+                                <a class="overlay text-decoration-none" href="/ical-manager" onmouseleave="overlayToggle(true, this)" onmouseenter="overlayToggle(false, this)">
+                                    <div class="overlay-text">Castaway</div>
+                                </a>
+
+                                <div class="card-body">
+                                    <p class="card-text">A survival game built entirely using Windows Forms in C#, completed as the final project for my grade 12 programming course</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <a href="#" class="btn btn-sm btn-outline-secondary">About</a>
+                                            <a href="#" class="btn btn-sm btn-outline-secondary">Try it</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card shadow-sm">
+                            
+                                <svg class="bd-placeholder-img card-img-top"
+                                     width="100%" height="225"
+                                     xmlns="http://www.w3.org/2000/svg"
+                                     role="img"
+                                     preserveAspectRatio="xMidYMid slice"
+                                     focusable="false">
+                                        
+                                        <rect width="100%" height="100%" fill="#55595c"/>
+                                        <image href="/images/personal-projects/placeholder.jpg" width="100%" height="100%">
+                                        
+                                </svg>
+                                
+                                <a class="overlay text-decoration-none" href="/ical-manager" onmouseleave="overlayToggle(true, this)" onmouseenter="overlayToggle(false, this)">
+                                    <div class="overlay-text">Open Parliament Map</div>
+                                </a>
+
+                                <div class="card-body">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <a href="#" class="btn btn-sm btn-outline-secondary">About</a>
+                                            <a href="#" class="btn btn-sm btn-outline-secondary">Try it</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card shadow-sm">
+                            
+                                <svg class="bd-placeholder-img card-img-top"
+                                     width="100%" height="225"
+                                     xmlns="http://www.w3.org/2000/svg"
+                                     role="img"
+                                     preserveAspectRatio="xMidYMid slice"
+                                     focusable="false">
+                                        
+                                        <rect width="100%" height="100%" fill="#55595c"/>
+                                        <image href="/images/personal-projects/placeholder.jpg" width="100%" height="100%">
+                                        
+                                </svg>
+                                
+                                <a class="overlay text-decoration-none" href="/ical-manager" onmouseleave="overlayToggle(true, this)" onmouseenter="overlayToggle(false, this)">
+                                    <div class="overlay-text">iOS/Mac Programming</div>
+                                </a>
+
+                                <div class="card-body">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <a href="#" class="btn btn-sm btn-outline-secondary">About</a>
+                                            <a href="#" class="btn btn-sm btn-outline-secondary">Try it</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card shadow-sm">
+                            
+                                <svg class="bd-placeholder-img card-img-top"
+                                     width="100%" height="225"
+                                     xmlns="http://www.w3.org/2000/svg"
+                                     role="img"
+                                     preserveAspectRatio="xMidYMid slice"
+                                     focusable="false">
+                                        
+                                        <rect width="100%" height="100%" fill="#55595c"/>
+                                        <image href="/images/personal-projects/placeholder.jpg" width="100%" height="100%">
+                                        
+                                </svg>
+                                
+                                <a class="overlay text-decoration-none" href="/ical-manager" onmouseleave="overlayToggle(true, this)" onmouseenter="overlayToggle(false, this)">
+                                    <div class="overlay-text">Twotter Discord Bot</div>
+                                </a>
+
+                                <div class="card-body">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <a href="#" class="btn btn-sm btn-outline-secondary">About</a>
+                                            <a href="#" class="btn btn-sm btn-outline-secondary">Try it</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card shadow-sm">
+                            
+                                <svg class="bd-placeholder-img card-img-top"
+                                     width="100%" height="225"
+                                     xmlns="http://www.w3.org/2000/svg"
+                                     role="img"
+                                     preserveAspectRatio="xMidYMid slice"
+                                     focusable="false">
+                                        
+                                        <rect width="100%" height="100%" fill="#55595c"/>
+                                        <image href="/images/personal-projects/placeholder.jpg" width="100%" height="100%">
+                                        
+                                </svg>
+                                
+                                <a class="overlay text-decoration-none" href="/ical-manager" onmouseleave="overlayToggle(true, this)" onmouseenter="overlayToggle(false, this)">
+                                    <div class="overlay-text">iCal File Manager</div>
+                                </a>
+
+                                <div class="card-body">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <a href="#" class="btn btn-sm btn-outline-secondary">About</a>
+                                            <a href="#" class="btn btn-sm btn-outline-secondary">Try it</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card shadow-sm">
+                            
+                                <svg class="bd-placeholder-img card-img-top"
+                                     width="100%" height="225"
+                                     xmlns="http://www.w3.org/2000/svg"
+                                     role="img"
+                                     preserveAspectRatio="xMidYMid slice"
+                                     focusable="false">
+                                        
+                                        <rect width="100%" height="100%" fill="#55595c"/>
+                                        <image href="/images/personal-projects/placeholder.jpg" width="100%" height="100%">
+                                        
+                                </svg>
+                                
+                                <a class="overlay text-decoration-none" href="/ical-manager" onmouseleave="overlayToggle(true, this)" onmouseenter="overlayToggle(false, this)">
+                                    <div class="overlay-text">Stratford Festival Database</div>
+                                </a>
+
+                                <div class="card-body">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <a href="#" class="btn btn-sm btn-outline-secondary">About</a>
+                                            <a href="#" class="btn btn-sm btn-outline-secondary">Try it</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card shadow-sm">
+                            
+                                <svg class="bd-placeholder-img card-img-top"
+                                     width="100%" height="225"
+                                     xmlns="http://www.w3.org/2000/svg"
+                                     role="img"
+                                     preserveAspectRatio="xMidYMid slice"
+                                     focusable="false">
+                                        
+                                        <rect width="100%" height="100%" fill="#55595c"/>
+                                        <image href="/images/personal-projects/placeholder.jpg" width="100%" height="100%">
+                                        
+                                </svg>
+                                
+                                <a class="overlay text-decoration-none" href="/ical-manager" onmouseleave="overlayToggle(true, this)" onmouseenter="overlayToggle(false, this)">
+                                    <div class="overlay-text">University of Guelph Chat Bot</div>
+                                </a>
+
+                                <div class="card-body">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <a href="#" class="btn btn-sm btn-outline-secondary">About</a>
+                                            <a href="#" class="btn btn-sm btn-outline-secondary">Try it</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
