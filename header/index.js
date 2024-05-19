@@ -15,4 +15,6 @@ function initHeader(html)
     }
 
     document.getElementById('navbar-' + page).classList.add('active');
+
+    document.getElementById('main-content').style.marginTop = '56px';
 }
